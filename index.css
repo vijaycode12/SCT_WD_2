@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main{
+ display: flex;
+ flex-direction: column;
+ height: 90vh;
+ background: linear-gradient(rgb(230, 231, 225),rgb(140, 208, 231),rgb(255, 255, 255));
+}
+.border{
+     border: 2px solid black;
+    width:900px;
+    height:400px;
+    line-height: 180px;
+    border-radius: 8px;
+    background-color: white;
+}
+.main-div{
+    background-color: white;
+}
+.timer{
+    font-size: 80px;
+    font-weight: 450;
+}
+#lap{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+#lap:hover{
+    box-shadow: 0px 0px 15px skyblue;
+    transform: scale(105%,105%);
+}
+#start{
+    font-size: 30px;
+    padding: 40px;
+    border-radius: 80%;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 25px;
+}
+#start:hover{
+    box-shadow: 2px 2px 20px rgb(67, 149, 182);
+    transform: scale(115%,115%);
+}
+#reset{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 25px;
+}
+#reset:hover{
+    box-shadow: 0px 0px 15px skyblue;
+    transform: scale(105%,105%);
+} 
+#laps{
+    display: inline-flex;
+    flex-direction: column;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+@media (max-width: 600px) {
+    .border {
+        width: 100%;
+        height: 350px;
+    }
+    .timer {
+        font-size: 50px;
+    }
+    #lap, #reset {
+        font-size: 20px;
+        padding: 8px;
+    }
+    #start {
+        font-size: 25px;
+        padding: 30px;
+    }
+    #laps {
+        font-size: 16px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .border {
+        width: 700px;
+        height: 380px;
+    }
+    .timer {
+        font-size: 65px;
+    }
+    #lap, #reset {
+        font-size: 22px;
+        padding: 8px;
+    }
+    #start {
+        font-size: 28px;
+        padding: 35px;
+    }
+    #laps {
+        font-size: 18px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .border {
+        width: 800px;
+        height: 390px;
+    }
+    .timer {
+        font-size: 70px;
+    }
+    #lap, #reset {
+        font-size: 24px;
+        padding: 9px;
+    }
+    #start {
+        font-size: 29px;
+        padding: 38px;
+    }
+    #laps {
+        font-size: 19px;
+    }
+}
+@media (min-width: 1025px) {
+    .border {
+        width: 900px;
+        height: 400px;
+    }
+    .timer {
+        font-size: 80px;
+    }
+    #lap, #reset {
+        font-size: 25px;
+        padding: 10px;
+    }
+    #start {
+        font-size: 30px;
+        padding: 40px;
+    }
+    #laps {
+        font-size: 20px;
+    }
+}
